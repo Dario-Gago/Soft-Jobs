@@ -1,5 +1,5 @@
 const { pool } = require('../../db/connection')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs') // Cambiado a bcryptjs
 
 const registrarUsuario = async ({ email, password, rol, lenguage }) => {
   const existe = await pool.query('SELECT * FROM usuarios WHERE email = $1', [

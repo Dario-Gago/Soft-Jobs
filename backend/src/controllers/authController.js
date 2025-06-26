@@ -1,9 +1,8 @@
 const jwt = require('jsonwebtoken')
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs') // Cambiado a bcryptjs
 const { getUserByEmail } = require('../models/usuariosModel')
 require('dotenv').config()
 
-// Clave secreta para firmar el token
 const JWT_SECRET = process.env.JWT_SECRET || 'az_AZ'
 
 const verificarCredenciales = async (email, password) => {
