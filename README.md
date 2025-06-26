@@ -37,7 +37,7 @@
      DB_HOST=localhost
      DB_NAME=softjobs
      DB_PASS=tu_contraseña_aquí
-     PORT=5432
+     PORT=3000
      JWT_SECRET=az_AZ
      ```
    - **Recuerda:** Si tu usuario de PostgreSQL no tiene contraseña, deja `DB_PASS=` vacío.
